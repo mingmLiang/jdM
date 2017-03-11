@@ -1,0 +1,139 @@
+/*
+ * 京东移动站的公用的样式
+ */
+
+*,
+::before,
+::after
+{
+	margin: 0;
+	padding: 0;
+	/*清除浏览器默认的点击高亮的效果*/
+	-webkit-tap-highlight-color: transparent;
+	
+	/*以border开始计算宽度*/
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-size: 14px;
+	/*sans-serif手机的默认字体*/
+	font-family: "微软雅黑",sans-serif;
+	color: #000000;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+ul
+{
+	list-style: none;
+}
+
+input,textarea
+{
+	border: none;
+	/*不可伸缩*/
+	resize: none;
+	/*清除选中之后的效果*/
+	outline: none;
+	/*清除浏览器input,textarea默认的样式*/
+	-webkit-appearance: none;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clear::after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+
+[class^="icon_"]
+{
+	background: url("../images/sprites.png") no-repeat;
+	/*规定背景图像的尺寸*/
+	background-size: 200px 200px;
+}
+/*头部通栏*/
+.jd_topBar
+{
+	height: 45px;
+	width: 100%;
+	/*图片缩小一倍,为的是显示更细腻/清晰*/
+	background: url("../images/header-bg.png") repeat-x;
+	background-size: 1px 44px;
+	border-bottom: 1px solid #E0E0E0;
+	position: absolute;
+	z-index: 1000;
+}
+
+.jd_topBar h2
+{
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	/*去掉粗体*/
+	font-weight: inherit;
+	line-height: 44px;
+}
+/*返回按钮*/
+.jd_topBar .icon_back
+{
+	background-position: -20px 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	/*按钮不能设置太小,用户体验不好*/
+	margin: 12px 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	
+/*搜索区块*/
+.jd_topBar form
+{
+	width: 100%;
+	height: 44px;
+	padding: 0 40px;
+}
+
+.jd_topBar form input
+{
+	width: 100%;
+	height: 32px;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	margin-top: 7px;
+	text-indent: 1em;
+	font-family: "微软雅黑",sans-serif;
+}
+
+
+.jd_topBar .icon_menu
+{
+	background-position: -60px 0;
+	width: 40px;
+	height: 44px;
+	display: block;
+	/*按钮不能设置太小,用户体验不好*/
+	padding: 12px 10px;
+	
+	
+	background-clip: content-box;
+	background-origin: content-box;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+}

@@ -1,0 +1,213 @@
+body
+{
+	background: #F0F0F0;
+}
+.jd_topBar
+{
+	position: static;
+}
+
+.jd_topBar h2
+{
+	font-family: '微软雅黑',sans-serif;
+	color: #333;
+}
+/*安全提示*/
+.jd_safeTip
+{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 13px;
+	background: #fff;
+	border-bottom:#EEEEEE solid 1px ;
+
+}
+
+.jd_safeTip p
+{
+
+	padding-left: 25px;
+	width: 207px;
+	display: inline-block;
+	position: relative;
+}
+
+.jd_safeTip p::before
+{
+	content: "";
+	width:  18px;
+	height: 18px;
+	background: url(../images/safe_icon.png);
+	position: absolute;
+	background-size: 18px 18px;
+	left: 0;
+	top: 8px;
+}
+/*公用复选框*/
+.jd_check_box
+{
+	height: 20px;
+	width: 20px;
+	display: block;
+	background: url(../images/shop-icon.png) no-repeat;
+	background-size: 50px 100px;
+	background-position: 0 0;
+}
+
+.jd_check_box[checked]
+{
+	background-position: -25px 0;
+}
+
+
+.jd_shop
+{
+	margin-top: 10px;
+	background: #fff;
+	
+}
+.jd_shop .jd_shop_title
+{
+	height: 36px;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	display: block;	
+}
+
+.jd_shop .jd_shop_title .title_check
+{
+	width: 40px;
+	height: 35px;
+	float: left;
+
+	
+}
+.jd_shop .jd_shop_title .title_check .jd_check_box
+{
+	position: relative;
+	top: 7px;
+	left: 10px;
+}
+.jd_shop  .title_name 
+{
+	float: left;
+}
+.jd_shop .title_name img
+{
+	width: 15px;
+	height: 13px;
+	display: block;
+	float: left;
+	margin-top: 10px;
+	}
+	
+	.jd_shop .title_name .name
+	{
+		line-height: 36px;
+		float: left;
+		font-size: 13px;
+		padding-left: 2px;		
+	}
+	.jd_shop .tips
+	{
+		line-height: 36px;
+		float: right;
+		color: #f00;
+		padding-right: 10px;
+	}
+
+
+/*
+ * 商品
+ */
+
+.jd_shop .jd_shop_content
+{
+	border-bottom: 1px solid #E0E0E0;
+	position: relative;
+}
+
+.jd_shop .jd_shop_content .con_check
+{
+	position: absolute;
+	width: 40px;
+	top: 0;
+	left: 0;
+}
+
+.jd_shop .jd_shop_content .con_product
+{
+	margin-top: 10px;
+	padding-left: 40px;
+	padding-right: 10px;
+	
+}
+
+.jd_shop .jd_shop_content .con_product .con_product_img
+{
+	float: left;
+	height: 80px;
+	width: 80px;
+	display: block;
+	margin-right: 10px;
+}
+.jd_shop .jd_shop_content .con_product .con_product_img img
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jd_shop .jd_shop_content .con_product .con_product_box
+{
+	
+}
+.jd_shop .jd_shop_content .con_product .con_product_box .name
+{
+	height: 30px;
+	line-height: 15px;
+	font-size: 13px;
+	overflow: hidden;
+	display: block;
+}
+
+.jd_shop .jd_shop_content .con_product .con_product_box .price
+{
+	margin-top: 5px;
+}
+.jd_shop .jd_shop_content .con_product .con_product_box .option
+{
+	height: 24px;
+}
+.jd_shop .jd_shop_content .con_product .con_product_box .option .changeBox_increase
+{
+	width: 32px;
+	height: 24px;
+	border: 1px solid #e0e0e0;
+	/*左上角/左下角*/
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	display: block;
+	float: left;
+}
+
+.jd_shop .jd_shop_content .con_product .con_product_box .option .changeBox_decrease
+{
+	width: 32px;
+	height: 24px;
+	border: 1px solid #e0e0e0;
+	/*左上角/左下角*/
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	display: block;
+	float: left;
+}
+.jd_shop .jd_shop_content .con_product .con_product_box .option input
+{
+	width: 32px;
+	height: 24px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	float: left;
+}
